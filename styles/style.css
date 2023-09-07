@@ -133,23 +133,21 @@ article > p {
 .container {
   width:1200px;
   position:relative;
-  -webkit-animation:slide 8s ease-in-out infinite;
-  -moz-animation:slide 8s ease-in-out infinite;
-  -ms-animation:slide 8s ease-in-out infinite;
-  -o-animation:slide 8s ease-in-out infinite;
-  animation:slide 8s ease-in-out infinite;
+  -webkit-animation:slide 11s ease-in-out infinite;
+  -moz-animation:slide 11s ease-in-out infinite;
+  -ms-animation:slide 11s ease-in-out infinite;
+  -o-animation:slide 11s ease-in-out infinite;
+  animation:slide 11s ease-in-out infinite;
 }
 
 .container section {
   width:300px;
   height: 6.5rem;
   float:left;
-  font-size: 5em;
 }
 
 .container section p{
   text-align: center;
-  margin-top: 0.5rem;
   font-size: 1.2rem;
   color: #325c8e;
 }
