@@ -20,6 +20,7 @@ body {
   font-family: 'The Sims Sans SC', sans-serif;
 }
 
+/* Zorgt er voor dat alles onderste boven staat */
 article {
   position: relative;
   display: flex;
@@ -110,19 +111,6 @@ dd img{
 /* Zorgt er voor dat het een stukje naar beneden gaat vanaf boven. */
 dd:nth-of-type(2){  
   transform: translateY(1rem);
-}
-
-p { 
-  margin: 0;
-}
-
-article > p {
-  width: 100%;
-  margin-top: 0;
-  padding: 3rem 2rem;
-  border-radius: 0 0 1rem 1rem;
-  text-align: center;
-  background: rgba(255,255,255, 0.5);
 }
 
 /* automatische slider */
