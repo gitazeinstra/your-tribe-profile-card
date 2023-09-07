@@ -130,7 +130,6 @@ article > p {
   margin-top: 2.5em;
 }
 
-/*   */
 .container {
   width: 80rem;
   position:relative;
@@ -171,6 +170,7 @@ article > p {
 }
 
 /* Zorgt ervoor dat er een slide show ontstaat */
+/* Ondersteunt Chrome */
 @-webkit-keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
@@ -178,6 +178,8 @@ article > p {
   75% {left:-60rem;}
   100% {left:0;}
 }
+
+/* Ondersteunt Safari */
 @-moz-keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
@@ -185,6 +187,8 @@ article > p {
   75% {left:-60rem;}
   100% {left:0;}
 }
+
+/* Ondersteunt Firefox */
 @-ms-keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
@@ -192,6 +196,8 @@ article > p {
   75% {left:-60rem;}
   100% {left:0;}
 }
+
+/* Ondersteunt Internet Explorer */
 @-o-keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
@@ -199,6 +205,8 @@ article > p {
   75% {left:-60rem;}
   100% {left:0;}
 }
+
+
 @keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
