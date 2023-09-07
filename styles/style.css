@@ -7,14 +7,14 @@
 }
 
 html {
-  height: 100vh;
+  height: 150vh;
 }
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
   color: #4276b7;
   font-family: 'The Sims Sans', sans-serif;
   font-family: 'The Sims Sans SC', sans-serif;
@@ -113,24 +113,17 @@ dd:nth-of-type(2){
   transform: translateY(1rem);
 }
 
-/* automatische slider */
+/* float zorgt er in dit geval dat de sections over elkaar gevallen zijn */
 #slideshow {
   width:20rem;
   overflow:hidden;
   margin-top: 2.5em;
 }
 
-.container {
-  width: 80rem;
-  position:relative;
-  animation:slide 11s ease-in-out infinite;
-}
-
-/* float zorgt er in dit geval dat de sections over elkaar gevallen zijn */
+/* Zorgt er voor dat de tekst in het midden staat */
 .container section {
   width:20rem;
-  height: 6.5rem;
-  float:left;
+  margin-bottom: 2rem;
 }
 
 /* Zorgt er voor dat de tekst in het midden staat */
@@ -148,14 +141,42 @@ dd:nth-of-type(2){
   display: block;
   margin: auto;
 }
+  
+/* Als deze animatie ondersteunt wordt, laat hij de onderstaande code zien */
+@supports (animation:slide 11s ease-in-out infinite) {
+  html {
+    height: 100vh;
+  }
+
+  body{
+    height: 100vh;
+  }
+/* automatische slider */
+.container {
+  width: 80rem;
+  position:relative;
+  animation:slide 11s ease-in-out infinite;
+}
+
+/* float zorgt er in dit geval dat de sections over elkaar gevallen zijn */
+.container section {
+  width:20rem;
+  height: 6.5rem;
+  float:left;
+}
 
 /* Pauseert de animatie als je er overheen hovert */
 .container:hover {
  animation-play-state:paused;
 }
 
-/* Zorgt ervoor dat er een slide show ontstaat */
+.container section {
+  width:20rem;
+  margin: 0;
+}
 
+
+/* Zorgt ervoor dat er een slide show ontstaat */
 @keyframes slide {
   0% {left:0;}
   25% {left:-20rem;}
@@ -163,6 +184,4 @@ dd:nth-of-type(2){
   75% {left:-60rem;}
   100% {left:0;}
 }
-
-
-
+}
