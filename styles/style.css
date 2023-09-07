@@ -125,13 +125,14 @@ article > p {
 
 /* automatische slider */
 #slideshow {
-  width:300px;
+  width:20rem;
   overflow:hidden;
   margin-top: 2.5em;
 }
 
+/*   */
 .container {
-  width:1200px;
+  width: 80rem;
   position:relative;
   -webkit-animation:slide 11s ease-in-out infinite;
   -moz-animation:slide 11s ease-in-out infinite;
@@ -140,12 +141,14 @@ article > p {
   animation:slide 11s ease-in-out infinite;
 }
 
+/* float zorgt er in dit geval dat de sections over elkaar gevallen zijn */
 .container section {
-  width:300px;
+  width:20rem;
   height: 6.5rem;
   float:left;
 }
 
+/* Zorgt er voor dat de tekst in het midden staat */
 .container section p{
   text-align: center;
   font-size: 1.2rem;
@@ -153,6 +156,7 @@ article > p {
   padding: 0 1rem;
 }
 
+/* Zorgt voor de juiste formaat en dat hij in het midden is gepositioneerd */
 .container section img {
   width: 3rem;
   height: 3rem;
@@ -160,44 +164,46 @@ article > p {
   margin: auto;
 }
 
+/* Pauseert de animatie als je er overheen hovert */
 .container:hover {
  animation-play-state:paused;
  -webkit-animation-play-state:paused;
 }
 
+/* Zorgt ervoor dat er een slide show ontstaat */
 @-webkit-keyframes slide {
   0% {left:0;}
-  25% {left:-300px;}
-  50% {left:-600px;}
-  75% {left:-900px;}
+  25% {left:-20rem;}
+  50% {left:-40rem;}
+  75% {left:-60rem;}
   100% {left:0;}
 }
 @-moz-keyframes slide {
   0% {left:0;}
-  25% {left:-300px;}
-  50% {left:-600px;}
-  75% {left:-900px;}
+  25% {left:-20rem;}
+  50% {left:-40rem;}
+  75% {left:-60rem;}
   100% {left:0;}
 }
 @-ms-keyframes slide {
   0% {left:0;}
-  25% {left:-300px;}
-  50% {left:-600px;}
-  75% {left:-900px;}
+  25% {left:-20rem;}
+  50% {left:-40rem;}
+  75% {left:-60rem;}
   100% {left:0;}
 }
 @-o-keyframes slide {
   0% {left:0;}
-  25% {left:-300px;}
-  50% {left:-600px;}
-  75% {left:-900px;}
+  25% {left:-20rem;}
+  50% {left:-40rem;}
+  75% {left:-60rem;}
   100% {left:0;}
 }
 @keyframes slide {
   0% {left:0;}
-  25% {left:-300px;}
-  50% {left:-600px;}
-  75% {left:-900px;}
+  25% {left:-20rem;}
+  50% {left:-40rem;}
+  75% {left:-60rem;}
   100% {left:0;}
 }
 
