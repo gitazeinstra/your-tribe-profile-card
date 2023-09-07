@@ -1,6 +1,7 @@
+/* Sims 4 geïnspireerde lettertype */
 @import url('https://fonts.cdnfonts.com/css/the-sims-sans');
                 
-
+/* Inclusief padding en border in een box. Zonder word alles groter dan de daadwerkelijke grootte */
 * {
   box-sizing: border-box;
 }
@@ -31,8 +32,6 @@ article {
   border-radius: 1rem;
   background-image: url("/assets/sims-background.png");
   transition: .25s;
-  background-size: auto;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -89,6 +88,7 @@ dt:nth-of-type(1) {
 }
 dt:nth-of-type(2) {
   grid-area: css-dt;
+  /* Zorgt er voor dat het een stukje naar beneden gaat vanaf boven. */
   transform: translateY(1rem);
 }
 dt:nth-of-type(3) {
@@ -101,11 +101,13 @@ dd {
   transition: .25s .3s;
 }
 
+/* Sims 4 icon */
 dd img{
   width: 3rem;
   height: 3rem;
 }
 
+/* Zorgt er voor dat het een stukje naar beneden gaat vanaf boven. */
 dd:nth-of-type(2){  
   transform: translateY(1rem);
 }
@@ -205,7 +207,6 @@ article > p {
   75% {left:-60rem;}
   100% {left:0;}
 }
-
 
 @keyframes slide {
   0% {left:0;}
