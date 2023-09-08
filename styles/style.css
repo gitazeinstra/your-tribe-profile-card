@@ -31,10 +31,9 @@ article {
   max-width: 25em;
   min-width: 20em;
   border-radius: 1rem;
-  background-image: url("../assets/sims-background.png");
+  background-image: url("assets/sims-background.png");
   transition: .25s;
 }
-
 header {
   display: flex;
   flex-direction: column;
